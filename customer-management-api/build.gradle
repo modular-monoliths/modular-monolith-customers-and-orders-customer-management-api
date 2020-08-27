@@ -1,0 +1,3 @@
+dependencies {
+    compile "net.chrisrichardson.examples.monolithic.customersandorders:money:$moneyVersion"
+}
