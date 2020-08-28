@@ -19,7 +19,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build
-      run: ./build-and-test-all.sh
+      run: ./gradlew build
     - name: Publish
       # Don't publish nuget packages for builds triggered by pull requests (pull requests from forks won't have access to secrets anyway)
       if: github.event_name != 'pull_request'
